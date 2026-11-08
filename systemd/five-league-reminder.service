@@ -1,0 +1,15 @@
+[Unit]
+Description=Football pre-match WeCom reminder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=five-league-reminder
+Group=five-league-reminder
+WorkingDirectory=/opt/five-league-reminder
+EnvironmentFile=/etc/five-league-reminder.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONIOENCODING=utf-8
+TimeoutStartSec=90
+ExecStart=/opt/five-league-reminder/.venv/bin/python /opt/five-league-reminder/five_league_reminder.py

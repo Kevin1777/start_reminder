@@ -1,0 +1,11 @@
+[Unit]
+Description=Run football league pre-match reminder every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=1s
+Unit=five-league-reminder.service
+
+[Install]
+WantedBy=timers.target

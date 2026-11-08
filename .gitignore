@@ -1,0 +1,34 @@
+.env
+.env.*
+!.env.example
+.venv/
+.wdm/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/
+sent.json
+logs/
+*.log
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Keep only the reminder's reusable verification script from scratch work.
+/work/*
+!/work/check_vps_launcher.py
+
+# Other football research projects share this local directory.
+/Legacy_Core_Replay_R1/
+/X3.1_Local_Runtime_R1/
+/X33_Local_Runtime_R1/
+/赛事规则跨平台测试包*/
+/*.txt
+!/requirements.txt
